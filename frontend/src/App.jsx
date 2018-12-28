@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormattingForm from './components/FormattingForm';
+import FormattingForm from './components/FormattingForm/FormattingForm';
 import './App.css';
 
 class App extends Component {

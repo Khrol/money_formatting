@@ -5,7 +5,7 @@ const result = (props) => {
     if (!props.success) {
         style = {color: 'red'};
     }
-    return <p style={style}>{props.text}</p>
+    return <p id='result' style={style}>{props.children}</p>
 }
 
 export default result;
