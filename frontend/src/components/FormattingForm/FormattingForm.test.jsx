@@ -33,7 +33,7 @@ describe('<FormattingForm />', () => {
 
     it ('renders successful response from api', 
         sample(
-            (resolve, reject) => {
+            (resolve, _) => {
                 resolve({
                     ok: true, 
                     text: function() {
@@ -47,7 +47,7 @@ describe('<FormattingForm />', () => {
     );
 
     it ('renders failures', sample(
-            (resolve, reject) => {
+            (resolve, _) => {
                 resolve({
                     ok: false, 
                     text: function() {
@@ -60,7 +60,7 @@ describe('<FormattingForm />', () => {
     ));
 
     it ('renders crashes', sample(
-        (resolve, reject) => {
+        (_, reject) => {
             reject('failure');
         },
         'red',
